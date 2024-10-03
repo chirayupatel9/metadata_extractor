@@ -155,7 +155,3 @@ class MetadataExtractor:
             return self.read_ibw_file()
         else:
             raise ValueError("Unsupported file format")
-
-extract = MetadataExtractor("run4_0012.h5")
-metadata = extract.get_metadata()
-pprint(metadata)
