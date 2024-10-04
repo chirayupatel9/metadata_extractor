@@ -3,7 +3,7 @@ import hyperspy.api as hs
 
 
 # Subclass for DigitalMicrograph (.dm4) files
-class DM4MetadataExtractor(MetadataExtractor):
+class DM4(MetadataExtractor):
     """
     Class for extracting metadata from DigitalMicrograph (.dm4) files.
     """

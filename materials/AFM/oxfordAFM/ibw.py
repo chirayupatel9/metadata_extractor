@@ -2,7 +2,7 @@ from igor2 import binarywave
 from MetadataExtractor import MetadataExtractor
 
 # Subclass for Igor Binary Wave (.ibw) files
-class IBWMetadataExtractor(MetadataExtractor):
+class IBW(MetadataExtractor):
     """
     Class for extracting metadata from Igor Binary Wave (.ibw) files.
     """

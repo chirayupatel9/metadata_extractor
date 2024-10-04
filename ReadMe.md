@@ -21,11 +21,11 @@ pip install -r requirements.txt
 ### For h5 File type
 
 ```python
-from ex_h5 import H5MetadataExtractor
+from materials.AFM.bandexcitation.h5 import H5
 import json
 from pprint import pprint
 
-process_file = H5MetadataExtractor("path/to/file")
+process_file = H5("path/to/file")
 metadata = process_file.extract()
 
 print(metadata)
@@ -35,11 +35,11 @@ print(json.dumps(metadata, indent=4))  # Print metadata in JSON format
 ### For xrdml file type
 
 ```python
-from ex_xrdml import XRDMLMetadataExtractor
+from materials.Xray.panalytical.xrdml import XRDML
 import json
 from pprint import pprint
 
-process_file = XRDMLMetadataExtractor("path/to/file")
+process_file = XRDML("path/to/file")
 metadata = process_file.extract()
 
 print(metadata)
@@ -50,11 +50,11 @@ print(json.dumps(metadata, indent=4))  # Print metadata in JSON format
 ### For dm4 file type
 
 ```python
-from ex_dm4 import DM4MetadataExtractor
+from materials.EM.dm.dm4 import DM4
 import json
 from pprint import pprint
 
-process_file = DM4MetadataExtractor("path/to/file")
+process_file = DM4("path/to/file")
 metadata = process_file.extract()
 
 print(metadata)
@@ -64,11 +64,11 @@ print(json.dumps(metadata, indent=4))  # Print metadata in JSON format
 ### For ibw file type
 
 ```python
-from ex_ibw import IBWMetadataExtractor
+from materials.AFM.oxfordAFM.ibw import IBW
 import json
 from pprint import pprint
 
-process_file = IBWMetadataExtractor("path/to/file")
+process_file = IBW("path/to/file")
 metadata = process_file.extract()
 
 print(metadata)

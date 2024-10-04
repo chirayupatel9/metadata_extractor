@@ -2,7 +2,7 @@ import h5py
 from MetadataExtractor import MetadataExtractor
 
 
-class H5MetadataExtractor(MetadataExtractor):
+class H5(MetadataExtractor):
     """
     Class for extracting metadata from HDF5 (.h5) files.
     """

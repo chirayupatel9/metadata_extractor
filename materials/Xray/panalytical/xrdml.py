@@ -3,7 +3,7 @@ from MetadataExtractor import MetadataExtractor
 
 
 # Subclass for XRDML (.xrdml) files
-class XRDMLMetadataExtractor(MetadataExtractor):
+class XRDML(MetadataExtractor):
     """
     Class for extracting metadata from XRDML (.xrdml) files.
     """
